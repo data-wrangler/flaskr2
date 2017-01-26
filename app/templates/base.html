@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Flaskr</title>
+    {% else %}
+    <title>Welcome to Flaskr</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Flaskr: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
